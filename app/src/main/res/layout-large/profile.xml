@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp">
+
+    <!--Profile-->
+
+    <LinearLayout
+        android:id="@+id/lyt_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Profile_name"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/user_email"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Profile_email"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--Total Earning-->
+
+    <LinearLayout
+        android:id="@+id/total_earning_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lyt_profile">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Available_coins"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/money_on_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_alignParentStart="true"
+                android:maxLines="1"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/withdrow_frm_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Withdraw"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingLeft="12dp"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="12dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Share this App-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/total_earning_lyt"
+        android:layout_above="@+id/sign_out_btn_lyt"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Share_App"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+
+    </LinearLayout>
+
+    <!--BSign out Btn-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_out_btn_lyt"
+        android:layout_above="@+id/below_txt_lyt"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:id="@+id/sign_out_btn"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:text="@string/Sign_out_text"/>
+    </LinearLayout>
+
+
+    <!--Bottom Text-->
+
+    <LinearLayout
+        android:id="@+id/below_txt_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/bottom_text1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_favorite_red_400_24dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/bottom_text2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

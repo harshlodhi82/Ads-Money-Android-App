@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ads Money - Watch Ads and Earn Real Money</string>
+    <string name="title_home">Home</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_profile">Profile</string>
+    <string name="user_name">Harsh Patel</string>
+    <string name="bottom_text1">Made with </string>
+    <string name="bottom_text2"> by H4R5</string>
+    <string name="Profile_email"> h4r5.and@gmail.com</string>
+    <string name="Profile_name">Harsh Lodhi</string>
+    <string name="Share_App">Share This App</string>
+    <string name="Withdraw">Withdraw</string>
+    <string name="Available_coins">Available Coins</string>
+    <string name="client_id">37709252422-93dsr4t3sij6pfm7r907lci173n1kh39.apps.googleusercontent.com</string>
+    <string name="Sign_out_text">Sign Out</string>
+    <string name="Lava_test_id">DE67A0768DBE8DBD42FA5FE0937441CF</string>
+
+
+</resources>
